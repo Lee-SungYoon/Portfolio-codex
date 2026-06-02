@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open [http://localhost:3100](http://localhost:3100).
 
 On macOS, the bundled launcher can also start the local server:
 
@@ -18,7 +18,7 @@ zsh start-portfolio.command
 ```
 
 For Codex sessions, use the same launcher whenever a browser preview is needed.
-It runs the automatic-refresh preview at `http://localhost:3000`.
+It runs the automatic-refresh preview at `http://localhost:3100`.
 After the launcher starts once, saved design and content changes appear in the
 browser without rebuilding or restarting the server.
 
