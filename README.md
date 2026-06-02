@@ -20,3 +20,9 @@ Projects are managed in `data/projects.json`. Replace the demo media paths with 
 ```bash
 npm run build
 ```
+
+## Deploy
+
+Import this repository into Vercel and deploy with the default Next.js settings.
+The demo visuals use public preview URLs. Replace them with NAS media URLs in
+`data/projects.json` when production assets are ready.
