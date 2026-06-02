@@ -1,0 +1,27 @@
+/* Use standard tracking for easier reading across display and UI text. */
+.brand-mark,
+.header-nav a,
+.eyebrow,
+.section-kicker,
+.meta-row,
+.archive-count,
+.hero-copy h1,
+.home-intro h2,
+.approach-section h2,
+.category-section h2,
+.approach-grid span,
+.approach-grid h3,
+.category-links strong,
+.card-index,
+.card-copy h3,
+.view-link,
+.outline-link,
+.project-hero-overlay p,
+.project-hero-overlay h1,
+.next-project span,
+.next-project h2,
+.metadata-grid span,
+.about-grid span,
+.install-grid span {
+  letter-spacing: normal;
+}

@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "@/styles/globals.css";
+import "@/styles/tracking.css";
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import SmoothScrollProvider from "@/components/SmoothScrollProvider";
