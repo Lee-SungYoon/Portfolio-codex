@@ -25,8 +25,11 @@ browser without rebuilding or restarting the server.
 To open the automatic-refresh preview after macOS login, run this once:
 
 ```bash
-zsh install-autostart.command
+zsh /Users/iseong-yun/Documents/Portfolio-codex/install-autostart.command
 ```
+
+This replaces older preview services that attempted to read the Documents
+folder directly. macOS now opens the launcher interactively at login.
 
 To remove the automatic login service:
 

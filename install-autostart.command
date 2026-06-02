@@ -21,6 +21,10 @@ cat > "$PLIST" <<EOF
     <string>/usr/bin/open</string>
     <string>$PROJECT/start-portfolio.command</string>
   </array>
+  <key>LimitLoadToSessionType</key>
+  <string>Aqua</string>
+  <key>ProcessType</key>
+  <string>Interactive</string>
   <key>RunAtLoad</key>
   <true/>
 </dict>
@@ -34,3 +38,4 @@ launchctl kickstart -k "$DOMAIN/$LABEL"
 echo ""
 echo "SY Archive automatic preview is enabled."
 echo "Open http://localhost:3000 in your browser."
+echo "The preview will also open automatically after your next macOS login."
