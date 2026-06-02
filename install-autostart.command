@@ -37,5 +37,5 @@ launchctl kickstart -k "$DOMAIN/$LABEL"
 
 echo ""
 echo "SY Archive automatic preview is enabled."
-echo "Open http://localhost:3100 in your browser."
+echo "Open http://localhost:4317 in your browser."
 echo "The preview will also open automatically after your next macOS login."

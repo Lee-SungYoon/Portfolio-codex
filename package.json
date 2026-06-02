@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "serve:local": "next dev -H 127.0.0.1 -p 3100",
+    "serve:local": "next dev -H 127.0.0.1 -p 4317",
     "lint": "next lint"
   },
   "dependencies": {
