@@ -18,7 +18,9 @@ zsh start-portfolio.command
 ```
 
 For Codex sessions, use the same launcher whenever a browser preview is needed.
-It serves the latest production build at `http://localhost:3000`.
+It runs the automatic-refresh preview at `http://localhost:3000`.
+After the launcher starts once, saved design and content changes appear in the
+browser without rebuilding or restarting the server.
 
 ## Content
 
