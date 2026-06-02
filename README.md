@@ -11,6 +11,12 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
+On macOS, the bundled launcher can also start the local server:
+
+```bash
+zsh start-portfolio.command
+```
+
 ## Content
 
 Projects are managed in `data/projects.json`. Replace the demo media paths with public NAS preview URLs when the final assets are ready.
