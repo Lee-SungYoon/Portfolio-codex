@@ -7,10 +7,10 @@ export default function HomePage() {
   return (
     <>
       <section className="home-hero">
-        <h1 className="sr-only">Technical Creative Archive</h1>
+        <h1 className="sr-only">Identity Motion Experience</h1>
         <div className="marquee-track marquee-primary" aria-hidden="true">
-          <span>TECHNICAL CREATIVE ARCHIVE</span>
-          <span>TECHNICAL CREATIVE ARCHIVE</span>
+          <span>IDENTITY MOTION EXPERIENCE</span>
+          <span>IDENTITY MOTION EXPERIENCE</span>
         </div>
         <div className="marquee-track marquee-secondary" aria-hidden="true">
           <span>BRAND MOTION AI MUSIC</span>
