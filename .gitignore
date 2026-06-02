@@ -1,0 +1,11 @@
+# Local secrets
+.env*
+!.env.example
+
+# Dependencies and build output
+node_modules/
+.next/
+out/
+
+# Local system files
+.DS_Store

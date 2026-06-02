@@ -1,0 +1,4 @@
+import type { Media } from "@/types/project";
+import AudioPlayer from "./AudioPlayer";
+import RevealMedia from "./RevealMedia";
+export default function MediaGallery({ media }: { media: Media[] }) { return <section className="media-gallery"><div className="section-kicker">Media gallery <span>({String(media.length).padStart(2, "0")})</span></div>{media.map((item,index) => item.type === "audio" ? <AudioPlayer media={item} key={`${item.type}-${index}`} /> : item.type === "video" ? <figure key={`${item.type}-${index}`}><video controls playsInline poster={item.poster} preload="metadata"><source src={item.url} /></video><figcaption>{item.caption}</figcaption></figure> : <figure key={`${item.type}-${index}`}><RevealMedia src={item.url} alt={item.caption} /><figcaption>{String(index + 1).padStart(2,"0")} / {item.caption}</figcaption></figure>)}</section>; }
