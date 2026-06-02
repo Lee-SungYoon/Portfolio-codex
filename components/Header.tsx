@@ -6,9 +6,10 @@ import { usePathname } from "next/navigation";
 export default function Header() {
   const pathname = usePathname();
   const links = [
-    { href: "/works", label: "Works Works Works" },
-    { href: "/about", label: "About About About" },
-    { href: "/install", label: "Install Install Install" },
+    { href: "/works", label: "Work" },
+    { href: "/#approach", label: "Approach" },
+    { href: "/about", label: "About" },
+    { href: "/#contact", label: "Contact" },
   ];
 
   return (
@@ -18,7 +19,7 @@ export default function Header() {
       </Link>
       <nav className="header-nav" aria-label="Main navigation">
         {links.map(({ href, label }) => (
-          <Link className={pathname.startsWith(href) ? "active" : ""} href={href} key={href}>
+          <Link className={href.startsWith("/") && !href.includes("#") && pathname.startsWith(href) ? "active" : ""} href={href} key={href}>
             {label}
           </Link>
         ))}
