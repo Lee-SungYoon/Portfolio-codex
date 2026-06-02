@@ -18,19 +18,11 @@ cat > "$PLIST" <<EOF
   <string>$LABEL</string>
   <key>ProgramArguments</key>
   <array>
-    <string>/bin/zsh</string>
+    <string>/usr/bin/open</string>
     <string>$PROJECT/start-portfolio.command</string>
   </array>
   <key>RunAtLoad</key>
   <true/>
-  <key>KeepAlive</key>
-  <true/>
-  <key>WorkingDirectory</key>
-  <string>$PROJECT</string>
-  <key>StandardOutPath</key>
-  <string>/tmp/sy-archive-preview.log</string>
-  <key>StandardErrorPath</key>
-  <string>/tmp/sy-archive-preview.error.log</string>
 </dict>
 </plist>
 EOF

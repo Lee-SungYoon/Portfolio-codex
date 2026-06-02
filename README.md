@@ -22,7 +22,7 @@ It runs the automatic-refresh preview at `http://localhost:3000`.
 After the launcher starts once, saved design and content changes appear in the
 browser without rebuilding or restarting the server.
 
-To start the preview automatically after macOS login, run this once:
+To open the automatic-refresh preview after macOS login, run this once:
 
 ```bash
 zsh install-autostart.command
