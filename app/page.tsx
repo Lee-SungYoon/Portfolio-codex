@@ -1,40 +1,25 @@
-"use client";
-
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
 import Link from "next/link";
-import RevealMedia from "@/components/RevealMedia";
 import RevealText from "@/components/RevealText";
 import VisualFeed from "@/components/VisualFeed";
 import { categories, projects } from "@/components/project-data";
 
 export default function HomePage() {
-  const heroRef = useRef<HTMLElement>(null);
-  const hero = projects[0];
-
-  useEffect(() => {
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    const ctx = gsap.context(() => {
-      gsap.fromTo(".hero-image img", { scale: 1.12 }, { scale: 1, duration: 1.8, ease: "power3.out" });
-      gsap.fromTo(".hero-line", { yPercent: 105 }, { yPercent: 0, stagger: 0.12, duration: 1.05, ease: "power4.out", delay: 0.25 });
-    }, heroRef);
-    return () => ctx.revert();
-  }, []);
-
   return (
     <>
-      <section className="home-hero" ref={heroRef}>
-        <RevealMedia src={hero.coverImage} alt="SY Archive hero" className="hero-image" eager />
-        <div className="hero-shade" />
+      <section className="home-hero">
+        <h1 className="sr-only">Technical Creative Archive</h1>
+        <div className="marquee-track marquee-primary" aria-hidden="true">
+          <span>TECHNICAL CREATIVE ARCHIVE</span>
+          <span>TECHNICAL CREATIVE ARCHIVE</span>
+        </div>
+        <div className="marquee-track marquee-secondary" aria-hidden="true">
+          <span>BRAND MOTION AI MUSIC</span>
+          <span>BRAND MOTION AI MUSIC</span>
+        </div>
         <div className="hero-copy">
           <p className="eyebrow">Lee Seongyun / Selected works</p>
-          <h1>
-            <span className="hero-mask"><b className="hero-line">Technical</b></span>
-            <span className="hero-mask"><b className="hero-line">Creative</b></span>
-            <span className="hero-mask"><b className="hero-line">Archive</b></span>
-          </h1>
           <div className="hero-bottom">
-            <p>Brand / Motion / AI / Music</p>
+            <p>Creative systems / visual research</p>
             <span>Scroll to explore <i>↓</i></span>
           </div>
         </div>
