@@ -17,6 +17,9 @@ On macOS, the bundled launcher can also start the local server:
 zsh start-portfolio.command
 ```
 
+For Codex sessions, use the same launcher whenever a browser preview is needed.
+It serves the latest production build at `http://localhost:3000`.
+
 ## Content
 
 Projects are managed in `data/projects.json`. Replace the demo media paths with public NAS preview URLs when the final assets are ready.
