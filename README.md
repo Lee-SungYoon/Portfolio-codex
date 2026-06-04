@@ -17,24 +17,35 @@ On macOS, the bundled launcher can also start the local server:
 zsh start-portfolio.command
 ```
 
-For Codex sessions, use the same launcher whenever a browser preview is needed.
-It runs the automatic-refresh preview at `http://localhost:4317`.
+For Codex sessions, use the Codex connector whenever a browser preview is needed.
+It starts the server only when it is not already running:
+
+```bash
+zsh /Users/iseong-yun/Documents/Portfolio-codex/connect-codex-server.command
+```
+
+To open Codex together with the portfolio preview, use this launcher instead of
+opening Codex directly:
+
+```bash
+zsh /Users/iseong-yun/Documents/Portfolio-codex/open-codex-with-server.command
+```
+
+The preview runs at `http://localhost:4317`.
 After the launcher starts once, saved design and content changes appear in the
 browser without rebuilding or restarting the server.
 
-To open the automatic-refresh preview after macOS login, run this once:
+The old macOS login service is no longer recommended for Codex work. Remove it
+once from Terminal if it is still installed:
+
+```bash
+zsh /Users/iseong-yun/Documents/Portfolio-codex/uninstall-autostart.command
+```
+
+If you intentionally want the preview to start when the Mac logs in, use:
 
 ```bash
 zsh /Users/iseong-yun/Documents/Portfolio-codex/install-autostart.command
-```
-
-This replaces older preview services that attempted to read the Documents
-folder directly. macOS now opens the launcher interactively at login.
-
-To remove the automatic login service:
-
-```bash
-zsh uninstall-autostart.command
 ```
 
 ## Content

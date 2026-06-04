@@ -1,4 +1,4 @@
-/* Use standard tracking for easier reading across display and UI text. */
+/* Keep typography slightly tighter than default while preserving readability. */
 .brand-mark,
 .header-nav a,
 .eyebrow,
@@ -23,5 +23,5 @@
 .metadata-grid span,
 .about-grid span,
 .install-grid span {
-  letter-spacing: normal;
+  letter-spacing: -0.015em;
 }
