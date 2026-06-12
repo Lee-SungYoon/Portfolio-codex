@@ -1,23 +1,30 @@
+import Image from "next/image";
 import Link from "next/link";
-import type { Project } from "@/types/project";
-import RevealMedia from "./RevealMedia";
-import RevealText from "./RevealText";
+import type { Project } from "@/data/projects";
 
-export default function ProjectCard({ project, index }: { project: Project; index: number }) {
+type ProjectCardProps = {
+  project: Project;
+  priority?: boolean;
+};
+
+export default function ProjectCard({ project, priority = false }: ProjectCardProps) {
   return (
-    <article className={`project-card accent-${project.accent}`}>
-      <Link href={`/works/${project.slug}`} className="project-card-link" aria-label={`View ${project.title}`}>
-        <RevealMedia src={project.coverImage} alt={`${project.title} cover`} className="card-media" />
-        <div className="card-index">{String(index + 1).padStart(2, "0")}</div>
-        <RevealText className="card-copy" delay={0.08}>
-          <div className="meta-row">
-            <span>{project.categoryLabel}</span>
-            <span>{project.year}</span>
-          </div>
-          <h3>{project.title}</h3>
-          <p>{project.summary}</p>
-          <span className="view-link">{project.role.slice(0, 3).join(" / ")} <i>↗</i></span>
-        </RevealText>
+    <article className="project-card reveal">
+      <Link className="project-link" href={project.href} aria-label={project.title}>
+        <div className="project-media image-hover">
+          <Image
+            src={project.image}
+            alt={`${project.title} project thumbnail`}
+            fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            priority={priority}
+          />
+          <span className="project-badge">{project.category}</span>
+          <span className="project-arrow" aria-hidden="true">
+            ↗
+          </span>
+          <h2 className="project-title">{project.title}</h2>
+        </div>
       </Link>
     </article>
   );

@@ -5,24 +5,28 @@ import { usePathname } from "next/navigation";
 
 export default function Header() {
   const pathname = usePathname();
-  const links = [
-    { href: "/works", label: "Work" },
-    { href: "/#approach", label: "Approach" },
-    { href: "/about", label: "About" },
-    { href: "/#contact", label: "Contact" },
+  const isAbout = pathname === "/about";
+  const isWorks = pathname === "/works";
+  const navItems = [
+    { label: "WORK", href: "/works" },
+    { label: "ABOUT", href: "/about" },
   ];
 
   return (
-    <header className="site-header">
-      <Link href="/" className="brand-mark" aria-label="SY Archive home">
-        <span>SY</span>
+    <header className={`site-header reveal${isAbout ? " site-header--dark" : ""}${isWorks ? " site-header--works" : ""}`}>
+      <Link className="brand" href="/" aria-label="Lee. Sung Yoon home">
+        SY ARCHIVE
       </Link>
-      <nav className="header-nav" aria-label="Main navigation">
-        {links.map(({ href, label }) => (
-          <Link className={href.startsWith("/") && !href.includes("#") && pathname.startsWith(href) ? "active" : ""} href={href} key={href}>
-            {label}
+
+      <nav className="top-links" aria-label="Primary menu">
+        {navItems.map((item) => (
+          <Link className="text-link" href={item.href} key={item.label}>
+            {item.label}
           </Link>
         ))}
+        <Link className={`talk-button${isAbout ? " talk-button--light" : ""}`} href="#contact">
+          MESSAGE
+        </Link>
       </nav>
     </header>
   );

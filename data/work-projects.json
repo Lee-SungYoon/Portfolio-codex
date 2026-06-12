@@ -1,0 +1,98 @@
+[
+  {
+    "title": "Atelier House",
+    "category": "Brand",
+    "filterGroup": "Brand",
+    "layout": "case-study",
+    "image": "/images/projects/vitra-campaign.jpg",
+    "href": "#"
+  },
+  {
+    "title": "Signal Foundry",
+    "category": "Strategy",
+    "filterGroup": "Brand",
+    "layout": "editorial",
+    "image": "/images/projects/kanebo-beauty.jpg",
+    "href": "#"
+  },
+  {
+    "title": "Neural Bloom",
+    "category": "AI",
+    "filterGroup": "AI Visual",
+    "layout": "masonry-tall",
+    "image": "/images/projects/clear-water.jpg",
+    "href": "#"
+  },
+  {
+    "title": "Frame Drift",
+    "category": "Motion",
+    "filterGroup": "Motion",
+    "layout": "video-wide",
+    "image": "/images/projects/berserk-vfx.jpg",
+    "href": "#"
+  },
+  {
+    "title": "Nocturne Blue",
+    "category": "Music",
+    "filterGroup": "Music",
+    "layout": "album",
+    "image": "/images/projects/psycho-killer.jpg",
+    "href": "#"
+  },
+  {
+    "title": "Studio Verve",
+    "category": "Brand",
+    "filterGroup": "Brand",
+    "layout": "editorial",
+    "image": "/images/projects/ysl-2026fw.jpg",
+    "href": "#"
+  },
+  {
+    "title": "AI Afterlight",
+    "category": "AI",
+    "filterGroup": "AI Visual",
+    "layout": "poster",
+    "image": "/images/projects/visual-concept.jpg",
+    "href": "#"
+  },
+  {
+    "title": "Wave Memory",
+    "category": "Music",
+    "filterGroup": "Music",
+    "layout": "album-wide",
+    "image": "/images/projects/psycho-killer.jpg",
+    "href": "#"
+  },
+  {
+    "title": "Title Current",
+    "category": "Motion",
+    "filterGroup": "Motion",
+    "layout": "video-grid",
+    "image": "/images/projects/berserk-vfx.jpg",
+    "href": "#"
+  },
+  {
+    "title": "Northline Research",
+    "category": "Strategy",
+    "filterGroup": "Brand",
+    "layout": "case-study",
+    "image": "/images/projects/kanebo-beauty.jpg",
+    "href": "#"
+  },
+  {
+    "title": "Synthetic Echo",
+    "category": "AI",
+    "filterGroup": "AI Visual",
+    "layout": "masonry-wide",
+    "image": "/images/projects/clear-water.jpg",
+    "href": "#"
+  },
+  {
+    "title": "Velvet Noise",
+    "category": "Motion",
+    "filterGroup": "Motion",
+    "layout": "video-tall",
+    "image": "/images/projects/ysl-2026fw.jpg",
+    "href": "#"
+  }
+]

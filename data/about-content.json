@@ -1,0 +1,63 @@
+{
+  "title": "Creative Developer",
+  "intro": "I am a creative director from Korea with a background in motion graphics, brand strategy, and design. With a strong interest in media, art, and music, I focus on creating media-driven brand experiences.",
+  "portraitImage": "/images/profile-bw.png",
+  "servicesHeading": "Services",
+  "servicesIntro": "I offer a focused range of digital services, shaped around elegant presentation, strong performance, and practical collaboration.",
+  "services": [
+    {
+      "index": "01",
+      "title": "Responsive Design",
+      "description": "Layouts that stay precise across desktop, tablet, and mobile while preserving visual rhythm and readability."
+    },
+    {
+      "index": "02",
+      "title": "Frontend Development",
+      "description": "Fast, maintainable interfaces built with careful structure, clean styling systems, and responsive behavior."
+    },
+    {
+      "index": "03",
+      "title": "Motion Direction",
+      "description": "Subtle motion systems that add clarity and presence without slowing the experience down."
+    },
+    {
+      "index": "04",
+      "title": "Brand Presence",
+      "description": "Visual identity support that helps digital products feel cohesive across typography, imagery, and interaction."
+    }
+  ],
+  "highlightsHeading": "Highlights",
+  "highlightsIntro": "A snapshot of the disciplines and outcomes I keep returning to when shaping portfolio and client work.",
+  "highlights": [
+    {
+      "title": "Web Experiences",
+      "label": "Digital Craft",
+      "detail": "High-impact portfolio and brand websites",
+      "year": "2026"
+    },
+    {
+      "title": "Motion Systems",
+      "label": "Interaction",
+      "detail": "Refined reveal, hover, and transition behavior",
+      "year": "2026"
+    },
+    {
+      "title": "Visual Direction",
+      "label": "Art Direction",
+      "detail": "Editorial composition and image-led storytelling",
+      "year": "2025"
+    },
+    {
+      "title": "Brand Identity",
+      "label": "Design System",
+      "detail": "Typography, voice, and digital consistency",
+      "year": "2025"
+    },
+    {
+      "title": "Creative Development",
+      "label": "Frontend",
+      "detail": "Beautiful interfaces grounded in performance",
+      "year": "2024"
+    }
+  ]
+}

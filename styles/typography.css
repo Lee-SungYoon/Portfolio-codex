@@ -1,0 +1,39 @@
+body {
+  font-family: var(--font-body);
+  letter-spacing: 0;
+}
+
+.brand,
+.top-links a,
+.filter,
+.project-category {
+  font-family: var(--font-heading);
+  letter-spacing: 0.16em;
+}
+
+h1 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(4.25rem, 14.6vw, 15.25rem);
+  font-weight: 900;
+  line-height: 0.82;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.project-title {
+  margin: 0.35rem 0 0;
+  font-family: var(--font-thumbnail);
+  font-size: clamp(2.75rem, 4.5vw, 5rem);
+  font-weight: 500;
+  line-height: 0.95;
+  letter-spacing: 0;
+}
+
+.contact-link {
+  font-family: var(--font-heading);
+  font-size: clamp(3.25rem, 10vw, 9.375rem);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: 0;
+}

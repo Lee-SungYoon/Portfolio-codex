@@ -1,33 +1,70 @@
-import Link from "next/link";
-import RevealText from "@/components/RevealText";
+import aboutContent from "@/data/about-content.json";
+import FooterCTA from "@/components/FooterCTA";
+import Header from "@/components/Header";
 
 export const metadata = { title: "About" };
 
 export default function AboutPage() {
+  const { title, intro, portraitImage, servicesHeading, servicesIntro, services, highlightsHeading, highlightsIntro, highlights } =
+    aboutContent;
+
+  const [titleFirstLine, titleSecondLine] = title.split(" ");
+
   return (
-    <section className="about-page page-section">
-      <RevealText>
-        <p className="eyebrow">SY / Profile</p>
-        <h1>Quietly<br /><em>technical.</em><br />Visually<br /><em>restless.</em></h1>
-      </RevealText>
-      <RevealText className="about-statement">
-        <p>I am Lee Seongyun, a multidisciplinary creative working across brand identity, motion, generative visual research, and sound.</p>
-      </RevealText>
-      <div className="about-grid">
-        <RevealText>
-          <span>Capabilities</span>
-          <p>Brand Strategy<br />Visual Identity<br />Art Direction<br />Motion Design<br />Generative AI<br />Sound Design</p>
-        </RevealText>
-        <RevealText delay={0.08}>
-          <span>Selected tools</span>
-          <p>Illustrator<br />Photoshop<br />After Effects<br />Cinema 4D<br />Ableton Live<br />GPT</p>
-        </RevealText>
-      </div>
-      <RevealText className="contact-block">
-        <div className="section-kicker">Contact / Collaboration</div>
-        <a href="mailto:hello@example.com">hello@example.com</a>
-        <Link className="outline-link" href="/install">Install this archive <i>↗</i></Link>
-      </RevealText>
-    </section>
+    <>
+      <Header />
+      <section className="about-page">
+        <div className="about-hero reveal">
+          <h1 className="about-title">
+            <span>{titleFirstLine}</span>
+            <span>{titleSecondLine}</span>
+          </h1>
+          <p className="about-intro">{intro}</p>
+          <div className="about-portrait-wrap">
+            <img className="about-portrait" src={portraitImage} alt="Lee. Sung Yoon portrait" />
+          </div>
+        </div>
+
+        <section className="about-section reveal">
+          <div className="about-section-copy">
+            <h2>{servicesHeading}</h2>
+            <p>{servicesIntro}</p>
+          </div>
+          <div className="about-list">
+            {services.map((service) => (
+              <article className="about-list-item" key={service.index}>
+                <span>{service.index}</span>
+                <div>
+                  <h3>{service.title}</h3>
+                  <p>{service.description}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="about-section reveal">
+          <div className="about-section-copy">
+            <h2>{highlightsHeading}</h2>
+            <p>{highlightsIntro}</p>
+          </div>
+          <div className="about-list">
+            {highlights.map((item) => (
+              <article className="about-list-item about-list-item--highlight" key={item.title}>
+                <div>
+                  <h3>{item.title}</h3>
+                  <p>{item.label}</p>
+                </div>
+                <div>
+                  <p>{item.detail}</p>
+                </div>
+                <span>{item.year}</span>
+              </article>
+            ))}
+          </div>
+        </section>
+      </section>
+      <FooterCTA panel />
+    </>
   );
 }

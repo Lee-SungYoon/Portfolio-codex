@@ -1,26 +1,17 @@
 import type { Metadata, Viewport } from "next";
-import "@/styles/globals.css";
-import "@/styles/tracking.css";
-import Header from "@/components/Header";
-import PageTransition from "@/components/PageTransition";
+import RevealObserver from "@/components/RevealObserver";
 import SmoothScrollProvider from "@/components/SmoothScrollProvider";
+import "@/styles/globals.css";
 
 export const metadata: Metadata = {
-  title: { default: "SY Creative Archive", template: "%s / SY Archive" },
-  description: "Lee Seongyun's technical creative archive.",
-  manifest: "/manifest.json",
-  appleWebApp: { capable: true, statusBarStyle: "black-translucent", title: "SY Archive" },
-  icons: {
-    icon: [{ url: "/icons/icon.svg", type: "image/svg+xml" }],
-    apple: [{ url: "/icons/apple-touch-icon.svg", type: "image/svg+xml" }],
-  },
+  title: "Lee. Sung Yoon - Portfolio",
+  description: "Portfolio homepage for Lee. Sung Yoon.",
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
-  themeColor: "#f7f5ef",
+  themeColor: "#ffffff",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -28,9 +19,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         <SmoothScrollProvider>
-          <Header />
-          <PageTransition />
-          <main>{children}</main>
+          <RevealObserver />
+          {children}
         </SmoothScrollProvider>
       </body>
     </html>

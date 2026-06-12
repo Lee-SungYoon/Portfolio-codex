@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lee. Sung Yoon - Portfolio</title>
+    <meta name="description" content="Portfolio homepage for Lee. Sung Yoon." />
+    <link rel="stylesheet" href="/styles/globals.css" />
+  </head>
+  <body>
+    <header class="site-header reveal">
+      <a class="brand" href="/" aria-label="Lee. Sung Yoon home">SY ARCHIVE</a>
+      <nav class="top-links" aria-label="Primary menu">
+        <a class="text-link" href="#work">WORK</a>
+        <a class="text-link" href="#about">ABOUT</a>
+        <a class="talk-button" href="#contact">MESSAGE</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" id="about">
+        <div class="hero-title-wrap reveal">
+          <h1>Lee. Sung Yoon</h1>
+        </div>
+        <div class="hero-meta reveal" aria-label="Portfolio summary">
+          <p>Web &amp; Digital Experiences</p>
+          <p>Design, Motion, Brand Identity</p>
+          <p>Seoul, KR</p>
+          <p>2026</p>
+        </div>
+      </section>
+      <section class="work" id="work">
+        <div class="portfolio-grid" aria-live="polite">
+          <article class="project-card reveal">
+            <a class="project-link" href="#work" aria-label="Psycho Killer">
+              <div class="project-media image-hover">
+                <img src="/images/projects/psycho-killer.jpg" alt="Psycho Killer project thumbnail" loading="eager" />
+                <span class="project-badge">Music</span>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+                <h2 class="project-title">Psycho Killer</h2>
+              </div>
+            </a>
+          </article>
+          <article class="project-card reveal">
+            <a class="project-link" href="#work" aria-label="Vitra Campaign">
+              <div class="project-media image-hover">
+                <img src="/images/projects/vitra-campaign.jpg" alt="Vitra Campaign project thumbnail" loading="eager" />
+                <span class="project-badge">Brand</span>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+                <h2 class="project-title">Vitra Campaign</h2>
+              </div>
+            </a>
+          </article>
+          <article class="project-card reveal">
+            <a class="project-link" href="#work" aria-label="Kanebo Beauty">
+              <div class="project-media image-hover">
+                <img src="/images/projects/kanebo-beauty.jpg" alt="Kanebo Beauty project thumbnail" loading="lazy" />
+                <span class="project-badge">Brand</span>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+                <h2 class="project-title">Kanebo Beauty</h2>
+              </div>
+            </a>
+          </article>
+          <article class="project-card reveal">
+            <a class="project-link" href="#work" aria-label="Clear Water">
+              <div class="project-media image-hover">
+                <img src="/images/projects/clear-water.jpg" alt="Clear Water project thumbnail" loading="lazy" />
+                <span class="project-badge">AI Visual</span>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+                <h2 class="project-title">Clear Water</h2>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-cta" id="contact">
+      <p class="reveal">Available for Work</p>
+      <a class="contact-link reveal" href="mailto:hello@example.com">Get in Touch</a>
+      <div class="socials" aria-label="Social links">
+        <a class="text-link" href="#">Behance</a>
+        <a class="text-link" href="#">Dribbble</a>
+        <a class="text-link" href="#">Instagram</a>
+        <a class="text-link" href="#">LinkedIn</a>
+      </div>
+    </footer>
+    <script>
+      const revealItems = document.querySelectorAll(".reveal");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: "0px 0px -8% 0px", threshold: 0.12 });
+      revealItems.forEach((item) => observer.observe(item));
+    </script>
+  </body>
+</html>
