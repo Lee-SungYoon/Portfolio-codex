@@ -1,98 +1,98 @@
 [
   {
-    "title": "Atelier House",
-    "category": "Brand",
-    "filterGroup": "Brand",
-    "layout": "case-study",
-    "image": "/images/projects/vitra-campaign.jpg",
-    "href": "#"
-  },
-  {
-    "title": "Signal Foundry",
-    "category": "Strategy",
-    "filterGroup": "Brand",
-    "layout": "editorial",
-    "image": "/images/projects/kanebo-beauty.jpg",
-    "href": "#"
-  },
-  {
-    "title": "Neural Bloom",
-    "category": "AI",
-    "filterGroup": "AI Visual",
-    "layout": "masonry-tall",
-    "image": "/images/projects/clear-water.jpg",
-    "href": "#"
-  },
-  {
-    "title": "Frame Drift",
-    "category": "Motion",
-    "filterGroup": "Motion",
-    "layout": "video-wide",
-    "image": "/images/projects/berserk-vfx.jpg",
-    "href": "#"
-  },
-  {
-    "title": "Nocturne Blue",
-    "category": "Music",
-    "filterGroup": "Music",
-    "layout": "album",
-    "image": "/images/projects/psycho-killer.jpg",
-    "href": "#"
-  },
-  {
-    "title": "Studio Verve",
-    "category": "Brand",
-    "filterGroup": "Brand",
-    "layout": "editorial",
-    "image": "/images/projects/ysl-2026fw.jpg",
-    "href": "#"
-  },
-  {
-    "title": "AI Afterlight",
-    "category": "AI",
-    "filterGroup": "AI Visual",
-    "layout": "poster",
-    "image": "/images/projects/visual-concept.jpg",
-    "href": "#"
-  },
-  {
-    "title": "Wave Memory",
+    "title": "Weekly Signal",
     "category": "Music",
     "filterGroup": "Music",
     "layout": "album-wide",
-    "image": "/images/projects/psycho-killer.jpg",
-    "href": "#"
+    "image": "/images/instagram/weeks-01.jpg",
+    "href": "https://www.instagram.com/weeks_of_ai/"
   },
   {
-    "title": "Title Current",
+    "title": "Red Circuit",
     "category": "Motion",
     "filterGroup": "Motion",
     "layout": "video-grid",
-    "image": "/images/projects/berserk-vfx.jpg",
-    "href": "#"
+    "image": "/images/instagram/weeks-02.jpg",
+    "href": "https://www.instagram.com/weeks_of_ai/"
   },
   {
-    "title": "Northline Research",
-    "category": "Strategy",
-    "filterGroup": "Brand",
-    "layout": "case-study",
-    "image": "/images/projects/kanebo-beauty.jpg",
-    "href": "#"
+    "title": "Chrome Bloom",
+    "category": "AI",
+    "filterGroup": "AI Visual",
+    "layout": "poster",
+    "image": "/images/instagram/weeks-03.jpg",
+    "href": "https://www.instagram.com/weeks_of_ai/"
   },
   {
-    "title": "Synthetic Echo",
+    "title": "Liquid Pulse",
     "category": "AI",
     "filterGroup": "AI Visual",
     "layout": "masonry-wide",
-    "image": "/images/projects/clear-water.jpg",
-    "href": "#"
+    "image": "/images/instagram/weeks-04.jpg",
+    "href": "https://www.instagram.com/weeks_of_ai/"
   },
   {
-    "title": "Velvet Noise",
+    "title": "Soft Form",
+    "category": "Brand",
+    "filterGroup": "Brand",
+    "layout": "case-study",
+    "image": "/images/instagram/weeks-05.jpg",
+    "href": "https://www.instagram.com/weeks_of_ai/"
+  },
+  {
+    "title": "Chrome Loop",
+    "category": "Motion",
+    "filterGroup": "Motion",
+    "layout": "video-wide",
+    "image": "/images/instagram/weeks-06.jpg",
+    "href": "https://www.instagram.com/weeks_of_ai/"
+  },
+  {
+    "title": "Golden Drift",
+    "category": "AI",
+    "filterGroup": "AI Visual",
+    "layout": "poster",
+    "image": "/images/instagram/weeks-07.jpg",
+    "href": "https://www.instagram.com/weeks_of_ai/"
+  },
+  {
+    "title": "Memory Field",
+    "category": "Music",
+    "filterGroup": "Music",
+    "layout": "album",
+    "image": "/images/instagram/weeks-08.jpg",
+    "href": "https://www.instagram.com/weeks_of_ai/"
+  },
+  {
+    "title": "Portrait Logic",
+    "category": "Strategy",
+    "filterGroup": "Brand",
+    "layout": "editorial",
+    "image": "/images/instagram/weeks-09.jpg",
+    "href": "https://www.instagram.com/weeks_of_ai/"
+  },
+  {
+    "title": "Night Shift",
     "category": "Motion",
     "filterGroup": "Motion",
     "layout": "video-tall",
-    "image": "/images/projects/ysl-2026fw.jpg",
-    "href": "#"
+    "image": "/images/instagram/weeks-10.jpg",
+    "href": "https://www.instagram.com/weeks_of_ai/"
+  },
+  {
+    "title": "Halo Frame",
+    "category": "Brand",
+    "filterGroup": "Brand",
+    "layout": "case-study",
+    "image": "/images/instagram/weeks-11.jpg",
+    "href": "https://www.instagram.com/weeks_of_ai/"
+  },
+  {
+    "title": "Quiet Current",
+    "category": "AI",
+    "filterGroup": "AI Visual",
+    "layout": "masonry-wide",
+    "image": "/images/instagram/weeks-12.jpg",
+    "href": "https://www.instagram.com/weeks_of_ai/"
   }
 ]

@@ -7,43 +7,40 @@
   }
 
   const desktopMin = 64;
-  const desktopMax = 264;
+  const desktopMax = 420;
   const mobileMin = 48;
   const mobileMax = 92;
   let frameId = 0;
+  const canvas = document.createElement("canvas");
+  const context = canvas.getContext("2d");
+
+  if (!context) {
+    return;
+  }
 
   const fitTitle = () => {
     const viewportWidth = window.innerWidth;
     const isMobile = viewportWidth <= 768;
     const minSize = isMobile ? mobileMin : desktopMin;
     const maxSize = isMobile ? mobileMax : desktopMax;
-    const availableWidth = heroWrap.clientWidth;
+    const safePadding = isMobile ? 8 : 24;
+    const availableWidth = Math.max(heroWrap.clientWidth - safePadding, minSize);
+    const styles = window.getComputedStyle(heroTitle);
+    const text = (heroTitle.textContent || "").trim();
+
+    context.font = `${styles.fontWeight} 100px ${styles.fontFamily}`;
+    const baseWidth = context.measureText(text).width || 1;
+    const tracking = parseFloat(styles.letterSpacing) || 0;
+    const characters = Math.max(text.length - 1, 0);
+    const estimatedWidthAt100 = baseWidth + tracking * characters;
+    const fittedSize = Math.floor((availableWidth / estimatedWidthAt100) * 100);
 
     heroTitle.style.whiteSpace = isMobile ? "normal" : "nowrap";
-    heroTitle.style.fontSize = `${maxSize}px`;
-
-    let low = minSize;
-    let high = maxSize;
-    let best = minSize;
-
-    while (low <= high) {
-      const mid = Math.floor((low + high) / 2);
-      heroTitle.style.fontSize = `${mid}px`;
-
-      const titleWidth = Math.ceil(heroTitle.getBoundingClientRect().width);
-
-      if (titleWidth <= availableWidth) {
-        best = mid;
-        low = mid + 1;
-      } else {
-        high = mid - 1;
-      }
-    }
-
-    heroTitle.style.fontSize = `${best}px`;
+    heroTitle.style.fontSize = `${Math.max(minSize, Math.min(maxSize, fittedSize))}px`;
 
     while (
-      Math.ceil(heroTitle.getBoundingClientRect().width) > availableWidth &&
+      !isMobile &&
+      heroTitle.scrollWidth > availableWidth &&
       parseFloat(heroTitle.style.fontSize) > minSize
     ) {
       heroTitle.style.fontSize = `${parseFloat(heroTitle.style.fontSize) - 1}px`;
@@ -57,6 +54,9 @@
 
   queueFit();
   window.addEventListener("resize", queueFit);
+  window.addEventListener("pageshow", queueFit);
+  window.setTimeout(queueFit, 60);
+  window.setTimeout(queueFit, 180);
 
   const resizeObserver = new ResizeObserver(queueFit);
   resizeObserver.observe(heroWrap);

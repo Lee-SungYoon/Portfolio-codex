@@ -1,44 +1,38 @@
 [
   {
-    "title": "Psycho Killer",
+    "title": "Weekly Signal",
     "category": "Music",
-    "image": "/images/projects/psycho-killer.jpg",
-    "href": "#work"
+    "image": "/images/instagram/weeks-01.jpg",
+    "href": "https://www.instagram.com/weeks_of_ai/"
   },
   {
-    "title": "Vitra Campaign",
-    "category": "Brand",
-    "image": "/images/projects/vitra-campaign.jpg",
-    "href": "#work"
-  },
-  {
-    "title": "Kanebo Beauty",
-    "category": "Brand",
-    "image": "/images/projects/kanebo-beauty.jpg",
-    "href": "#work"
-  },
-  {
-    "title": "Clear Water",
-    "category": "AI Visual",
-    "image": "/images/projects/clear-water.jpg",
-    "href": "#work"
-  },
-  {
-    "title": "Berserk VFX",
+    "title": "Red Circuit",
     "category": "Motion",
-    "image": "/images/projects/berserk-vfx.jpg",
-    "href": "#work"
+    "image": "/images/instagram/weeks-02.jpg",
+    "href": "https://www.instagram.com/weeks_of_ai/"
   },
   {
-    "title": "YSL, 2026FW",
-    "category": "Brand",
-    "image": "/images/projects/ysl-2026fw.jpg",
-    "href": "#work"
-  },
-  {
-    "title": "Visual Concept",
+    "title": "Chrome Bloom",
     "category": "AI Visual",
-    "image": "/images/projects/visual-concept.jpg",
-    "href": "#work"
+    "image": "/images/instagram/weeks-03.jpg",
+    "href": "https://www.instagram.com/weeks_of_ai/"
+  },
+  {
+    "title": "Liquid Pulse",
+    "category": "AI Visual",
+    "image": "/images/instagram/weeks-04.jpg",
+    "href": "https://www.instagram.com/weeks_of_ai/"
+  },
+  {
+    "title": "Soft Form",
+    "category": "Brand",
+    "image": "/images/instagram/weeks-05.jpg",
+    "href": "https://www.instagram.com/weeks_of_ai/"
+  },
+  {
+    "title": "Chrome Loop",
+    "category": "Motion",
+    "image": "/images/instagram/weeks-06.jpg",
+    "href": "https://www.instagram.com/weeks_of_ai/"
   }
 ]

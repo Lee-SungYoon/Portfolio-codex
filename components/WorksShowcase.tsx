@@ -26,6 +26,10 @@ type WorkProject = {
 const filters: WorkFilter[] = ["All", "Brand", "AI Visual", "Motion", "Music"];
 const projects = workProjects as WorkProject[];
 
+function getWorkCardClass(index: number) {
+  return index % 7 === 0 || index % 7 === 3 ? "works-card--wide" : "works-card--standard";
+}
+
 export default function WorksShowcase() {
   const [activeFilter, setActiveFilter] = useState<WorkFilter>("All");
 
@@ -68,7 +72,7 @@ export default function WorksShowcase() {
         {filteredProjects.map((project, index) => (
           <article
             key={`${project.filterGroup}-${project.title}`}
-            className={`works-card works-card--${project.layout} reveal`}
+            className={`works-card ${getWorkCardClass(index)} reveal`}
             data-filter-group={project.filterGroup}
             data-category={project.category}
             style={{ transitionDelay: `${index * 80}ms` }}

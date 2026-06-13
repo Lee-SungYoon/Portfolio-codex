@@ -28,13 +28,17 @@ const socialMarkup = socialLinks
 function renderHeader({ workHref, aboutHref, dark = false }) {
   return `
     <header class="site-header reveal${dark ? " site-header--dark" : ""}">
-      <a class="brand" href="/" aria-label="Lee. Sung Yoon home">SY ARCHIVE</a>
+      <a class="header-cta${dark ? " header-cta--light" : ""}" href="#contact">MASSAGE</a>
       <nav class="top-links" aria-label="Primary menu">
+        <a class="text-link" href="/">HOME</a>
         <a class="text-link" href="${workHref}">WORK</a>
         <a class="text-link" href="${aboutHref}">ABOUT</a>
-        <a class="talk-button${dark ? " talk-button--light" : ""}" href="#contact">MESSAGE</a>
       </nav>
     </header>`;
+}
+
+function getWorkCardClass(index) {
+  return index % 7 === 0 || index % 7 === 3 ? "works-card--wide" : "works-card--standard";
 }
 
 function renderFooter(panel = false) {
@@ -99,7 +103,6 @@ function renderHome() {
             <div class="project-media image-hover">
               <img src="${escapeHtml(image)}" alt="${escapeHtml(title)} project thumbnail" ${index < 2 ? 'loading="eager" fetchpriority="high" decoding="async"' : 'loading="lazy" decoding="async"'} />
               <span class="project-badge">${escapeHtml(category)}</span>
-              <span class="project-arrow" aria-hidden="true">↗</span>
               <h2 class="project-title">${escapeHtml(title)}</h2>
             </div>
           </a>
@@ -240,7 +243,7 @@ function renderWorks() {
     .map(
       (project, index) => `
         <article
-          class="works-card works-card--${escapeHtml(project.layout)} reveal"
+          class="works-card ${getWorkCardClass(index)} reveal"
           data-filter-group="${escapeHtml(project.filterGroup)}"
           data-category="${escapeHtml(project.category)}"
           style="transition-delay: ${index * 80}ms;"
@@ -293,10 +296,6 @@ function renderWorks() {
 </html>`;
 }
 
-const homePage = renderHome();
-const aboutPage = renderAbout();
-const worksPage = renderWorks();
-
 function sendFile(req, res, filePath) {
   try {
     const asset = getCachedFile(filePath);
@@ -345,19 +344,19 @@ http
 
     if (requestPath === "/" || requestPath === "/index.html") {
       res.writeHead(200, { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" });
-      res.end(req.method === "HEAD" ? "" : homePage);
+      res.end(req.method === "HEAD" ? "" : renderHome());
       return;
     }
 
     if (requestPath === "/about" || requestPath === "/about/") {
       res.writeHead(200, { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" });
-      res.end(req.method === "HEAD" ? "" : aboutPage);
+      res.end(req.method === "HEAD" ? "" : renderAbout());
       return;
     }
 
     if (requestPath === "/works" || requestPath === "/works/") {
       res.writeHead(200, { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" });
-      res.end(req.method === "HEAD" ? "" : worksPage);
+      res.end(req.method === "HEAD" ? "" : renderWorks());
       return;
     }
 
