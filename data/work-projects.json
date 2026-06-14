@@ -2,97 +2,121 @@
   {
     "title": "Weekly Signal",
     "category": "Music",
+    "description": "AI sound artwork and weekly visual rhythm.",
+    "date": "26.05.31",
     "filterGroup": "Music",
     "layout": "album-wide",
     "image": "/images/instagram/weeks-01.jpg",
-    "href": "https://www.instagram.com/weeks_of_ai/"
+    "href": "/works/weekly-signal"
   },
   {
     "title": "Red Circuit",
     "category": "Motion",
+    "description": "Performance-led AI portrait motion frame.",
+    "date": "26.05.24",
     "filterGroup": "Motion",
     "layout": "video-grid",
     "image": "/images/instagram/weeks-02.jpg",
-    "href": "https://www.instagram.com/weeks_of_ai/"
+    "href": "/works/red-circuit"
   },
   {
     "title": "Chrome Bloom",
     "category": "AI",
+    "description": "Specular poster study for synthetic fashion imagery.",
+    "date": "26.05.17",
     "filterGroup": "AI Visual",
     "layout": "poster",
     "image": "/images/instagram/weeks-03.jpg",
-    "href": "https://www.instagram.com/weeks_of_ai/"
+    "href": "/works/chrome-bloom"
   },
   {
     "title": "Liquid Pulse",
     "category": "AI",
+    "description": "Abstract liquid highlights and refracted texture study.",
+    "date": "26.05.10",
     "filterGroup": "AI Visual",
     "layout": "masonry-wide",
     "image": "/images/instagram/weeks-04.jpg",
-    "href": "https://www.instagram.com/weeks_of_ai/"
+    "href": "/works/liquid-pulse"
   },
   {
     "title": "Soft Form",
     "category": "Brand",
+    "description": "Object-focused product mood for tactile brand language.",
+    "date": "26.05.03",
     "filterGroup": "Brand",
     "layout": "case-study",
     "image": "/images/instagram/weeks-05.jpg",
-    "href": "https://www.instagram.com/weeks_of_ai/"
+    "href": "/works/soft-form"
   },
   {
     "title": "Chrome Loop",
     "category": "Motion",
+    "description": "Cinematic AI character loop with cool neon lighting.",
+    "date": "26.04.26",
     "filterGroup": "Motion",
     "layout": "video-wide",
     "image": "/images/instagram/weeks-06.jpg",
-    "href": "https://www.instagram.com/weeks_of_ai/"
+    "href": "/works/chrome-loop"
   },
   {
     "title": "Golden Drift",
     "category": "AI",
+    "description": "Warm editorial poster built from generated light bloom.",
+    "date": "26.04.19",
     "filterGroup": "AI Visual",
     "layout": "poster",
     "image": "/images/instagram/weeks-07.jpg",
-    "href": "https://www.instagram.com/weeks_of_ai/"
+    "href": "/works/golden-drift"
   },
   {
     "title": "Memory Field",
     "category": "Music",
+    "description": "Ambient cover image for weekly sonic archive experiments.",
+    "date": "26.04.12",
     "filterGroup": "Music",
     "layout": "album",
     "image": "/images/instagram/weeks-08.jpg",
-    "href": "https://www.instagram.com/weeks_of_ai/"
+    "href": "/works/memory-field"
   },
   {
     "title": "Portrait Logic",
     "category": "Strategy",
+    "description": "Editorial character study for media-driven brand narratives.",
+    "date": "26.04.05",
     "filterGroup": "Brand",
     "layout": "editorial",
     "image": "/images/instagram/weeks-09.jpg",
-    "href": "https://www.instagram.com/weeks_of_ai/"
+    "href": "/works/portrait-logic"
   },
   {
     "title": "Night Shift",
     "category": "Motion",
+    "description": "Low-light cinematic frame sequence with AI grading.",
+    "date": "26.03.29",
     "filterGroup": "Motion",
     "layout": "video-tall",
     "image": "/images/instagram/weeks-10.jpg",
-    "href": "https://www.instagram.com/weeks_of_ai/"
+    "href": "/works/night-shift"
   },
   {
     "title": "Halo Frame",
     "category": "Brand",
+    "description": "Soft luxury object direction for tactile campaign systems.",
+    "date": "26.03.22",
     "filterGroup": "Brand",
     "layout": "case-study",
     "image": "/images/instagram/weeks-11.jpg",
-    "href": "https://www.instagram.com/weeks_of_ai/"
+    "href": "/works/halo-frame"
   },
   {
     "title": "Quiet Current",
     "category": "AI",
+    "description": "Minimal luminous composition with fluid reflective detail.",
+    "date": "26.03.15",
     "filterGroup": "AI Visual",
     "layout": "masonry-wide",
     "image": "/images/instagram/weeks-12.jpg",
-    "href": "https://www.instagram.com/weeks_of_ai/"
+    "href": "/works/quiet-current"
   }
 ]

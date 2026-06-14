@@ -14,5 +14,11 @@
 
   --ease-out-expo: cubic-bezier(0.22, 1, 0.36, 1);
   --ease-soft: cubic-bezier(0.16, 1, 0.3, 1);
-  --duration-slow: 800ms;
+  --duration-fast: 250ms;
+  --duration-base: 450ms;
+  --duration-slow: 750ms;
+  --duration-image: 900ms;
+  --distance-small: 8px;
+  --distance-medium: 24px;
+  --distance-large: 40px;
 }

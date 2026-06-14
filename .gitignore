@@ -11,3 +11,9 @@ tsconfig.tsbuildinfo
 
 # Local system files
 .DS_Store
+
+# NAS generated content
+.nas-sync.log
+public/nas-projects/
+data/nas-projects.generated.json
+data/nas-sync-report.json

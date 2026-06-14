@@ -50,7 +50,17 @@ zsh /Users/iseong-yun/Documents/Portfolio-codex/install-autostart.command
 
 ## Content
 
-Projects are managed in `data/projects.json`. Replace the demo media paths with public NAS preview URLs when the final assets are ready.
+The current portfolio site can be fed from a NAS source folder.
+
+- NAS guide: `docs/nas-portfolio-setup.md`
+- Config: `config/nas-portfolio.config.json`
+- Manual sync: `npm run sync:nas`
+- Optional macOS auto-sync: `zsh install-nas-sync.command`
+
+When the NAS share is mounted at `/Volumes/work/02_Portfolio/Online`, the sync
+script reads `01_projects/<slug>/project.txt`, copies the project media into
+`public/nas-projects/<slug>/`, and updates the portfolio pages automatically on
+the next refresh.
 
 ## Build
 

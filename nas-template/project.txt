@@ -1,0 +1,38 @@
+title: Weekly Signal
+slug: weekly-signal
+status: published
+category: Music
+filterGroup: Music
+date: 2026-05-31
+year: 2026
+location: Seoul, KR
+
+summary: AI sound artwork and weekly visual rhythm.
+description: A case-study page for generative music visuals and editorial storytelling.
+
+tags:
+- Sound Direction
+- Visual Identity
+- Editorial Story
+
+thumbnail: thumb.png
+heroImage: hero.png
+coverImage: cover.png
+
+gallery:
+- gallery-01.png
+- gallery-02.png
+- gallery-03.png
+
+fullMedia:
+- full-01.png
+
+splitMedia:
+- split-01.png
+
+videos:
+- detail-video-01.mp4
+
+quote: The new format helps each project read like a story instead of a simple gallery.
+quoteName: Lee Sung Yoon
+quoteRole: Creative Director

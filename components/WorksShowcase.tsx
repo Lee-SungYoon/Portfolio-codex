@@ -7,6 +7,8 @@ type WorkFilter = "All" | "Brand" | "AI Visual" | "Motion" | "Music";
 type WorkProject = {
   title: string;
   category: "Brand" | "AI" | "Motion" | "Music" | "Strategy";
+  description?: string;
+  date?: string;
   filterGroup: Exclude<WorkFilter, "All">;
   layout:
     | "case-study"
@@ -86,7 +88,12 @@ export default function WorksShowcase() {
                   decoding="async"
                 />
                 <span className="works-badge">{project.category}</span>
-                <h2 className="works-title">{project.title}</h2>
+                <span className="works-arrow" aria-hidden="true">↗</span>
+                <div className="works-copy">
+                  <h2 className="works-title">{project.title}</h2>
+                  <p className="works-description">{project.description}</p>
+                  <p className="works-date">{project.date}</p>
+                </div>
               </div>
             </a>
           </article>

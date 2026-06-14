@@ -2,37 +2,49 @@
   {
     "title": "Weekly Signal",
     "category": "Music",
+    "description": "AI sound artwork and weekly visual rhythm.",
+    "date": "26.05.31",
     "image": "/images/instagram/weeks-01.jpg",
-    "href": "https://www.instagram.com/weeks_of_ai/"
+    "href": "/works/weekly-signal"
   },
   {
     "title": "Red Circuit",
     "category": "Motion",
+    "description": "Performance-led AI portrait motion frame.",
+    "date": "26.05.24",
     "image": "/images/instagram/weeks-02.jpg",
-    "href": "https://www.instagram.com/weeks_of_ai/"
+    "href": "/works/red-circuit"
   },
   {
     "title": "Chrome Bloom",
     "category": "AI Visual",
+    "description": "Specular poster study for synthetic fashion imagery.",
+    "date": "26.05.17",
     "image": "/images/instagram/weeks-03.jpg",
-    "href": "https://www.instagram.com/weeks_of_ai/"
+    "href": "/works/chrome-bloom"
   },
   {
     "title": "Liquid Pulse",
     "category": "AI Visual",
+    "description": "Abstract liquid highlights and refracted texture study.",
+    "date": "26.05.10",
     "image": "/images/instagram/weeks-04.jpg",
-    "href": "https://www.instagram.com/weeks_of_ai/"
+    "href": "/works/liquid-pulse"
   },
   {
     "title": "Soft Form",
     "category": "Brand",
+    "description": "Object-focused product mood for tactile brand language.",
+    "date": "26.05.03",
     "image": "/images/instagram/weeks-05.jpg",
-    "href": "https://www.instagram.com/weeks_of_ai/"
+    "href": "/works/soft-form"
   },
   {
     "title": "Chrome Loop",
     "category": "Motion",
+    "description": "Cinematic AI character loop with cool neon lighting.",
+    "date": "26.04.26",
     "image": "/images/instagram/weeks-06.jpg",
-    "href": "https://www.instagram.com/weeks_of_ai/"
+    "href": "/works/chrome-loop"
   }
 ]

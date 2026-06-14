@@ -1,0 +1,12 @@
+{
+  "smbUrl": "smb://192.168.55.15/work/02_Portfolio/Online/",
+  "mountPath": "/Volumes/work/02_Portfolio/Online",
+  "projectsDir": "01_projects",
+  "outputDataFile": "data/nas-projects.generated.json",
+  "outputReportFile": "data/nas-sync-report.json",
+  "outputMediaDir": "public/nas-projects",
+  "scanIntervalMinutes": 5,
+  "publishedStatuses": ["published"],
+  "requiredMetaFile": "project.txt",
+  "requiredImages": ["thumb.png", "hero.png"]
+}
