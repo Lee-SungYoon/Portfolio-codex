@@ -9,59 +9,18 @@ export type Project = {
   href: string;
 };
 
-export const projects: Project[] = [
-  {
-    title: "Psycho Killer",
-    category: "Music",
-    image: "/images/projects/psycho-killer.jpg",
-    href: "/works/psycho-killer",
-  },
-  {
-    title: "Music Senses",
-    category: "Music",
-    image: "/images/projects/music-senses.jpg",
-    href: "/works/music-senses",
-  },
-  {
-    title: "Vitra Campaign",
-    category: "Brand",
-    image: "/images/projects/vitra-campaign.jpg",
-    href: "/works/vitra-campaign",
-  },
-  {
-    title: "4tential",
-    category: "Music",
-    image: "/images/projects/music-4tential.jpg",
-    href: "/works/4tential",
-  },
-  {
-    title: "Kanebo Beauty",
-    category: "Brand",
-    image: "/images/projects/kanebo-beauty.jpg",
-    href: "/works/kanebo-beauty",
-  },
-  {
-    title: "Clear Water",
-    category: "AI Visual",
-    image: "/images/projects/clear-water.jpg",
-    href: "/works/clear-water",
-  },
-  {
-    title: "Berserk VFX",
-    category: "Motion",
-    image: "/images/projects/berserk-vfx.jpg",
-    href: "/works/berserk-vfx",
-  },
-  {
-    title: "YSL, 2026FW",
-    category: "Brand",
-    image: "/images/projects/ysl-2026fw.jpg",
-    href: "/works/ysl-2026fw",
-  },
-  {
-    title: "Visual Concept",
-    category: "AI Visual",
-    image: "/images/projects/visual-concept.jpg",
-    href: "/works/visual-concept",
-  },
-];
+import { projects as archiveProjects } from "@/components/project-data";
+
+function toCardCategory(category: string): Project["category"] {
+  if (category === "ai") return "AI Visual";
+  if (category === "motion") return "Motion";
+  if (category === "music") return "Music";
+  return "Brand";
+}
+
+export const projects: Project[] = archiveProjects.map((project) => ({
+  title: project.title,
+  category: toCardCategory(project.category),
+  image: project.coverImage,
+  href: `/works/${project.slug}`,
+}));

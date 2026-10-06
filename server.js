@@ -68,7 +68,12 @@ function renderImage(src, alt, loading = "lazy") {
 
 function resolveSafePath(basePath, requestPath) {
   const absoluteBase = path.resolve(basePath);
-  const relativeRequest = String(requestPath || "").replace(/^[/\\]+/, "");
+  const rawRequest = String(requestPath || "");
+  if (rawRequest.includes("\0")) {
+    return null;
+  }
+
+  const relativeRequest = rawRequest.replace(/^[/\\]+/, "");
   const candidatePath = path.resolve(absoluteBase, relativeRequest);
   const relativePath = path.relative(absoluteBase, candidatePath);
 
