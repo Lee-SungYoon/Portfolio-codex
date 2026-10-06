@@ -16,11 +16,11 @@ export default function CategoryPage({ params }: { params: { category: Category 
   return (
     <section className="archive-page page-section">
       <RevealText className="archive-heading">
-        <p className="eyebrow">SY / Discipline</p>
+        <p className="eyebrow">SY / Filtered view</p>
         <h1>{category.short}<span>.</span></h1>
         <div className="archive-count">{String(filtered.length).padStart(2, "0")} Entries / Curated</div>
       </RevealText>
-      <VisualFeed projects={filtered} />
+      <VisualFeed projects={filtered} layout={category.value} />
     </section>
   );
 }

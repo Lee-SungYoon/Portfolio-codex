@@ -1,1 +1,272 @@
-[{"title":"Synthetic Nature","slug":"synthetic-nature","category":"generative-ai","categoryLabel":"Generative AI","year":2026,"summary":"Material, light, and machine imagination shaped into a quiet visual study.","history":["Synthetic Nature is a visual research series exploring how generated form can feel tactile rather than artificial.","The process moved between prompt direction, material tests, and composition studies to build a restrained image language.","The outcome is an evolving archive of sculptural images for editorial and motion applications."],"role":["Creative Direction","Prompt Design","Visual Curation"],"tools":["GPT","Photoshop","After Effects"],"coverImage":"https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=1200&q=85","heroMedia":{"type":"image","url":"https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=1600&q=90","caption":"Synthetic Nature hero visual"},"media":[{"type":"image","url":"https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=1600&q=90","caption":"Material study 01"}]},{"title":"A Sence Identity","slug":"a-sence-identity","category":"brand-design","categoryLabel":"Brand Design","year":2026,"summary":"A refined identity system for a fictional sensorial beauty platform.","history":["A Sence was imagined as a beauty platform where product, scent, and space share one composed visual language.","The identity favors calm surfaces, subtle contrast, and tactile materials over decorative gestures."],"role":["Brand Strategy","BI Design","Art Direction"],"tools":["Illustrator","Photoshop"],"coverImage":"https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?auto=format&fit=crop&w=1200&q=85","heroMedia":{"type":"image","url":"https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?auto=format&fit=crop&w=1600&q=90","caption":"A Sence brand objects"},"media":[{"type":"image","url":"https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?auto=format&fit=crop&w=1600&q=90","caption":"Packaging composition"}]},{"title":"Kinetic Signal","slug":"kinetic-signal","category":"motion-graphic","categoryLabel":"Motion Graphic","year":2026,"summary":"A sound-reactive title study built from orbiting light and controlled velocity.","history":["Kinetic Signal began with a simple question: how can sound leave a visible trace without becoming literal?","Light trails, metallic cores, and orbiting paths were tuned into a modular motion language."],"role":["Motion Direction","Design","Animation"],"tools":["After Effects","Cinema 4D"],"coverImage":"https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=1200&q=85","heroMedia":{"type":"image","url":"https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=1600&q=90","caption":"Kinetic Signal motion still"},"media":[{"type":"image","url":"https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1600&q=90","caption":"Form and light exploration"}]},{"title":"Nocturne Disc","slug":"nocturne-disc","category":"music","categoryLabel":"Music","year":2026,"summary":"An ambient electronic sketch shaped by resonance, space, and slow repetition.","history":["Nocturne Disc is a compact ambient study built around small changes in texture and repetition.","The archive is prepared for NAS-hosted MP3 previews and external full-track links."],"role":["Composition","Sound Design","Cover Art"],"tools":["Ableton Live","Photoshop"],"coverImage":"https://images.unsplash.com/photo-1614812513172-567d2fe96a75?auto=format&fit=crop&w=1200&q=85","heroMedia":{"type":"image","url":"https://images.unsplash.com/photo-1614812513172-567d2fe96a75?auto=format&fit=crop&w=1600&q=90","caption":"Nocturne Disc cover artwork"},"media":[{"type":"image","url":"https://images.unsplash.com/photo-1614812513172-567d2fe96a75?auto=format&fit=crop&w=1600&q=90","caption":"Cover artwork"},{"type":"audio","url":"","caption":"Audio preview prepared for NAS connection"}]}]
+[
+  {
+    "title": "Psycho Killer",
+    "slug": "psycho-killer",
+    "category": "music",
+    "categoryLabel": "Music",
+    "year": 2026,
+    "summary": "A cover-driven music identity shaped as an album-first art direction system.",
+    "history": [
+      "Psycho Killer reframes music packaging as a restrained portrait language built for album, motion teaser, and streaming surfaces.",
+      "The direction keeps a cinematic stillness while staying legible across digital releases and campaign crops."
+    ],
+    "role": ["Composition", "Sound Direction", "Cover Art"],
+    "tools": ["Ableton Live", "Photoshop", "Art Direction"],
+    "coverImage": "/images/projects/psycho-killer.jpg",
+    "heroMedia": {
+      "type": "image",
+      "url": "/images/projects/psycho-killer.jpg",
+      "caption": "Psycho Killer cover image"
+    },
+    "media": [
+      {
+        "type": "image",
+        "url": "/images/projects/psycho-killer.jpg",
+        "caption": "Psycho Killer portrait artwork"
+      }
+    ],
+    "publishedAt": "2026-06-11",
+    "featured": true,
+    "accent": "warm"
+  },
+  {
+    "title": "Music Senses",
+    "slug": "music-senses",
+    "category": "music",
+    "categoryLabel": "Music",
+    "year": 2026,
+    "summary": "An atmospheric music visual built around silence, distance, and restrained ambient mood.",
+    "history": [
+      "Music Senses frames sound as landscape, using minimal light and negative space to imply a slow cinematic build.",
+      "The artwork is structured for cover usage, streaming thumbnails, and quiet editorial music rollouts."
+    ],
+    "role": ["Album Art", "Sound Direction", "Visual Curation"],
+    "tools": ["Ableton Live", "Photoshop", "Art Direction"],
+    "coverImage": "/images/projects/music-senses.jpg",
+    "heroMedia": {
+      "type": "image",
+      "url": "/images/projects/music-senses.jpg",
+      "caption": "Music Senses cover image"
+    },
+    "media": [
+      {
+        "type": "image",
+        "url": "/images/projects/music-senses.jpg",
+        "caption": "Music Senses atmosphere artwork"
+      }
+    ],
+    "publishedAt": "2026-06-12",
+    "featured": true,
+    "accent": "cool"
+  },
+  {
+    "title": "Vitra Campaign",
+    "slug": "vitra-campaign",
+    "category": "brand",
+    "categoryLabel": "Brand",
+    "year": 2026,
+    "summary": "A tactile campaign system centered on product texture, contrast, and editorial framing.",
+    "history": [
+      "Vitra Campaign explores how product photography can feel structural, warm, and editorial without losing utility.",
+      "The image system is tuned for campaign cards, identity rollouts, and launch storytelling."
+    ],
+    "role": ["Brand Identity", "Campaign Direction", "Art Direction"],
+    "tools": ["Photoshop", "Layout Design", "Image Direction"],
+    "coverImage": "/images/projects/vitra-campaign.jpg",
+    "heroMedia": {
+      "type": "image",
+      "url": "/images/projects/vitra-campaign.jpg",
+      "caption": "Vitra Campaign product detail"
+    },
+    "media": [
+      {
+        "type": "image",
+        "url": "/images/projects/vitra-campaign.jpg",
+        "caption": "Vitra Campaign product study"
+      }
+    ],
+    "publishedAt": "2026-06-10",
+    "featured": true,
+    "accent": "warm"
+  },
+  {
+    "title": "4tential",
+    "slug": "4tential",
+    "category": "music",
+    "categoryLabel": "Music",
+    "year": 2026,
+    "summary": "A blurred performance portrait built as a music-facing visual identity with luminous color wash.",
+    "history": [
+      "4tential uses diffusion, glow, and silhouette to create a performance image that feels emotional and immediate.",
+      "The system is designed for album covers, teaser stills, and motion-led music promotion."
+    ],
+    "role": ["Cover Art", "Music Direction", "Visual Identity"],
+    "tools": ["Ableton Live", "Photoshop", "Image Direction"],
+    "coverImage": "/images/projects/music-4tential.jpg",
+    "heroMedia": {
+      "type": "image",
+      "url": "/images/projects/music-4tential.jpg",
+      "caption": "4tential cover image"
+    },
+    "media": [
+      {
+        "type": "image",
+        "url": "/images/projects/music-4tential.jpg",
+        "caption": "4tential blurred portrait artwork"
+      }
+    ],
+    "publishedAt": "2026-06-11",
+    "featured": false,
+    "accent": "blue"
+  },
+  {
+    "title": "Kanebo Beauty",
+    "slug": "kanebo-beauty",
+    "category": "brand",
+    "categoryLabel": "Brand",
+    "year": 2026,
+    "summary": "A beauty visual direction designed around reflective skin, warmth, and premium restraint.",
+    "history": [
+      "Kanebo Beauty studies how a beauty brand can balance intimacy, luxury, and controlled softness.",
+      "The result is structured for campaign hero cuts, digital lookbooks, and editorial placements."
+    ],
+    "role": ["Brand Identity", "Beauty Direction", "Visual Curation"],
+    "tools": ["Photoshop", "Retouching", "Art Direction"],
+    "coverImage": "/images/projects/kanebo-beauty.jpg",
+    "heroMedia": {
+      "type": "image",
+      "url": "/images/projects/kanebo-beauty.jpg",
+      "caption": "Kanebo Beauty portrait"
+    },
+    "media": [
+      {
+        "type": "image",
+        "url": "/images/projects/kanebo-beauty.jpg",
+        "caption": "Kanebo Beauty skin study"
+      }
+    ],
+    "publishedAt": "2026-06-09",
+    "featured": false,
+    "accent": "warm"
+  },
+  {
+    "title": "Clear Water",
+    "slug": "clear-water",
+    "category": "ai",
+    "categoryLabel": "Visual AI",
+    "year": 2026,
+    "summary": "A generated visual experiment around water, light bloom, and translucent abstraction.",
+    "history": [
+      "Clear Water is an AI-first poster series that investigates fluid highlights, glare, and minimal material cues.",
+      "The output is intended for poster walls, still frames, and generative visual campaigns."
+    ],
+    "role": ["Generative Visual", "Prompt Design", "Poster System"],
+    "tools": ["GPT", "Image Generation", "Photoshop"],
+    "coverImage": "/images/projects/clear-water.jpg",
+    "heroMedia": {
+      "type": "image",
+      "url": "/images/projects/clear-water.jpg",
+      "caption": "Clear Water poster visual"
+    },
+    "media": [
+      {
+        "type": "image",
+        "url": "/images/projects/clear-water.jpg",
+        "caption": "Clear Water generated still"
+      }
+    ],
+    "publishedAt": "2026-06-08",
+    "featured": false,
+    "accent": "blue"
+  },
+  {
+    "title": "Berserk VFX",
+    "slug": "berserk-vfx",
+    "category": "motion",
+    "categoryLabel": "Motion",
+    "year": 2026,
+    "summary": "A motion-driven character visual designed for title, trailer, and key art extension.",
+    "history": [
+      "Berserk VFX explores an intense motion language through metallic form, glow, and high-contrast portrait staging.",
+      "The system is conceived for moving key art, short teasers, and motion showcase frames."
+    ],
+    "role": ["Motion Direction", "Title Design", "VFX Visual"],
+    "tools": ["After Effects", "Cinema 4D", "Photoshop"],
+    "coverImage": "/images/projects/berserk-vfx.jpg",
+    "heroMedia": {
+      "type": "image",
+      "url": "/images/projects/berserk-vfx.jpg",
+      "caption": "Berserk VFX key frame"
+    },
+    "media": [
+      {
+        "type": "image",
+        "url": "/images/projects/berserk-vfx.jpg",
+        "caption": "Berserk VFX portrait frame"
+      }
+    ],
+    "publishedAt": "2026-06-07",
+    "featured": false,
+    "accent": "blue"
+  },
+  {
+    "title": "YSL, 2026FW",
+    "slug": "ysl-2026fw",
+    "category": "brand",
+    "categoryLabel": "Brand",
+    "year": 2026,
+    "summary": "A monochrome fashion campaign direction built for seasonal identity and launch staging.",
+    "history": [
+      "YSL, 2026FW uses silhouette, sparkle, and black-and-white contrast to define a campaign-led identity mood.",
+      "The visual system supports editorial rollout, hero images, and launch communication."
+    ],
+    "role": ["Brand Identity", "Fashion Campaign", "Editorial Direction"],
+    "tools": ["Photoshop", "Image Direction", "Campaign Layout"],
+    "coverImage": "/images/projects/ysl-2026fw.jpg",
+    "heroMedia": {
+      "type": "image",
+      "url": "/images/projects/ysl-2026fw.jpg",
+      "caption": "YSL 2026FW key visual"
+    },
+    "media": [
+      {
+        "type": "image",
+        "url": "/images/projects/ysl-2026fw.jpg",
+        "caption": "YSL 2026FW monochrome still"
+      }
+    ],
+    "publishedAt": "2026-06-06",
+    "featured": false,
+    "accent": "warm"
+  },
+  {
+    "title": "Visual Concept",
+    "slug": "visual-concept",
+    "category": "ai",
+    "categoryLabel": "Visual AI",
+    "year": 2026,
+    "summary": "A generative visual concept series mixing fashion portraiture with surreal poster composition.",
+    "history": [
+      "Visual Concept treats AI imagery as a poster wall language rather than a single hero visual.",
+      "The composition system is designed for masonic repetition, editorial crops, and experimental layouts."
+    ],
+    "role": ["Visual AI", "Prompt Direction", "Poster Curation"],
+    "tools": ["GPT", "Image Generation", "Photoshop"],
+    "coverImage": "/images/projects/visual-concept.jpg",
+    "heroMedia": {
+      "type": "image",
+      "url": "/images/projects/visual-concept.jpg",
+      "caption": "Visual Concept poster"
+    },
+    "media": [
+      {
+        "type": "image",
+        "url": "/images/projects/visual-concept.jpg",
+        "caption": "Visual Concept surreal frame"
+      }
+    ],
+    "publishedAt": "2026-06-05",
+    "featured": false,
+    "accent": "lime"
+  }
+]

@@ -2,7 +2,7 @@
 
 PORT=4317
 URL="http://localhost:$PORT"
-PROJECT="/Users/iseong-yun/Documents/Portfolio-codex"
+PROJECT="$(cd "$(dirname "$0")" && pwd)"
 
 if ! lsof -nP -iTCP:$PORT -sTCP:LISTEN >/dev/null 2>&1; then
   open "$PROJECT/start-portfolio.command"

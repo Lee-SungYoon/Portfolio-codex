@@ -1,6 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import RevealObserver from "@/components/RevealObserver";
-import SmoothScrollProvider from "@/components/SmoothScrollProvider";
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
@@ -17,12 +15,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>
-        <SmoothScrollProvider>
-          <RevealObserver />
-          {children}
-        </SmoothScrollProvider>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

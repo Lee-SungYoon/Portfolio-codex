@@ -1,6 +1,8 @@
 #!/bin/zsh
+set -euo pipefail
 
-cd "/Users/iseong-yun/Documents/Portfolio-codex" || exit 1
+ROOT_DIR="$(cd "$(dirname "$0")" && pwd)"
+cd "$ROOT_DIR"
 export PATH="$HOME/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin:$PATH"
 
 echo "Starting SY Archive with automatic refresh..."

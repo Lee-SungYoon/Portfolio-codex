@@ -1,3 +1,18 @@
 import type { Project } from "@/types/project";
-import ProjectCard from "./ProjectCard";
-export default function VisualFeed({ projects }: { projects:Project[] }) { return <div className="visual-feed">{projects.map((project,index)=><ProjectCard project={project} index={index} key={project.slug} />)}</div>; }
+import ArchiveProjectCard from "./ArchiveProjectCard";
+
+export default function VisualFeed({
+  projects,
+  layout = "all",
+}: {
+  projects: Project[];
+  layout?: "all" | "brand" | "ai" | "motion" | "music";
+}) {
+  return (
+    <div className={`visual-feed visual-feed--${layout}`}>
+      {projects.map((project, index) => (
+        <ArchiveProjectCard project={project} index={index} key={project.slug} />
+      ))}
+    </div>
+  );
+}

@@ -1,8 +1,9 @@
 export type Category =
-  | "brand-design"
-  | "motion-graphic"
+  | "brand"
+  | "ai"
+  | "motion"
   | "music"
-  | "generative-ai";
+  | "strategy";
 
 export type Media = {
   type: "image" | "video" | "audio";

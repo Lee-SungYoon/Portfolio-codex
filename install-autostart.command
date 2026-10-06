@@ -5,7 +5,7 @@ set -e
 LABEL="com.leeseongyun.syarchive.preview"
 PLIST="$HOME/Library/LaunchAgents/$LABEL.plist"
 DOMAIN="gui/$(id -u)"
-PROJECT="/Users/iseong-yun/Documents/Portfolio-codex"
+PROJECT="$(cd "$(dirname "$0")" && pwd)"
 
 mkdir -p "$HOME/Library/LaunchAgents"
 

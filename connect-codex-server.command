@@ -2,7 +2,7 @@
 
 PORT=4317
 URL="http://localhost:$PORT"
-PROJECT="/Users/iseong-yun/Documents/Portfolio-codex"
+PROJECT="$(cd "$(dirname "$0")" && pwd)"
 NODE="$HOME/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node"
 
 cd "$PROJECT" || exit 1
@@ -14,6 +14,10 @@ fi
 
 echo "Starting SY Archive for Codex..."
 echo "Open $URL in the in-app browser."
+
+if [[ ! -x "$NODE" ]]; then
+  NODE="$(command -v node)"
+fi
 
 nohup "$NODE" node_modules/next/dist/bin/next dev -H 127.0.0.1 -p "$PORT" > /tmp/sy-archive-codex.log 2> /tmp/sy-archive-codex.error.log &
 

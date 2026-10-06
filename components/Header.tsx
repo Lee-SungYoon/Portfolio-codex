@@ -1,22 +1,15 @@
-"use client";
-
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+
+const navItems = [
+  { label: "WORK", href: "/#work" },
+  { label: "ABOUT", href: "/#about" },
+];
 
 export default function Header() {
-  const pathname = usePathname();
-  const isAbout = pathname === "/about";
-  const isWorks = pathname === "/works";
-  const navItems = [
-    { label: "HOME", href: "/" },
-    { label: "WORK", href: "/works" },
-    { label: "ABOUT", href: "/about" },
-  ];
-
   return (
-    <header className={`site-header reveal${isAbout ? " site-header--dark" : ""}${isWorks ? " site-header--works" : ""}`}>
-      <Link className={`header-cta${isAbout ? " header-cta--light" : ""}`} href="#contact">
-        MASSAGE
+    <header className="site-header reveal">
+      <Link className="brand" href="/" aria-label="Lee. Sung Yoon home">
+        SY ARCHIVE
       </Link>
 
       <nav className="top-links" aria-label="Primary menu">
@@ -25,6 +18,9 @@ export default function Header() {
             {item.label}
           </Link>
         ))}
+        <Link className="talk-button" href="/#contact">
+          MESSAGE
+        </Link>
       </nav>
     </header>
   );

@@ -17,18 +17,18 @@ On macOS, the bundled launcher can also start the local server:
 zsh start-portfolio.command
 ```
 
-For Codex sessions, use the Codex connector whenever a browser preview is needed.
+For Codex sessions, use the local launcher whenever a browser preview is needed.
 It starts the server only when it is not already running:
 
 ```bash
-zsh /Users/iseong-yun/Documents/Portfolio-codex/connect-codex-server.command
+zsh connect-codex-server.command
 ```
 
 To open Codex together with the portfolio preview, use this launcher instead of
 opening Codex directly:
 
 ```bash
-zsh /Users/iseong-yun/Documents/Portfolio-codex/open-codex-with-server.command
+zsh open-codex-with-server.command
 ```
 
 The preview runs at `http://localhost:4317`.
@@ -39,28 +39,18 @@ The old macOS login service is no longer recommended for Codex work. Remove it
 once from Terminal if it is still installed:
 
 ```bash
-zsh /Users/iseong-yun/Documents/Portfolio-codex/uninstall-autostart.command
+zsh uninstall-autostart.command
 ```
 
 If you intentionally want the preview to start when the Mac logs in, use:
 
 ```bash
-zsh /Users/iseong-yun/Documents/Portfolio-codex/install-autostart.command
+zsh install-autostart.command
 ```
 
 ## Content
 
-The current portfolio site can be fed from a NAS source folder.
-
-- NAS guide: `docs/nas-portfolio-setup.md`
-- Config: `config/nas-portfolio.config.json`
-- Manual sync: `npm run sync:nas`
-- Optional macOS auto-sync: `zsh install-nas-sync.command`
-
-When the NAS share is mounted at `/Volumes/work/02_Portfolio/Online`, the sync
-script reads `01_projects/<slug>/project.txt`, copies the project media into
-`public/nas-projects/<slug>/`, and updates the portfolio pages automatically on
-the next refresh.
+Projects are managed in `data/projects.json`. Replace the demo media paths with public NAS preview URLs when the final assets are ready.
 
 ## Build
 

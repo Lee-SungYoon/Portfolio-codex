@@ -14,6 +14,8 @@ const sourceRoot = path.join(config.mountPath, config.projectsDir);
 const outputDataPath = path.join(root, config.outputDataFile);
 const outputReportPath = path.join(root, config.outputReportFile);
 const outputMediaRoot = path.join(root, config.outputMediaDir);
+const allowedImageExtensions = new Set([".png", ".jpg", ".jpeg", ".webp"]);
+const allowedVideoExtensions = new Set([".mp4"]);
 
 const listKeys = new Set(["tags", "gallery", "fullMedia", "splitMedia", "videos", "role", "tools"]);
 const scalarDefaults = {
@@ -41,6 +43,24 @@ function slugify(value) {
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
+}
+
+function isSafeSlug(value) {
+  return /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(value);
+}
+
+function isSafeAssetName(value, type = "image") {
+  const fileName = String(value || "").trim();
+  const extension = path.extname(fileName).toLowerCase();
+  const allowedExtensions = type === "video" ? allowedVideoExtensions : allowedImageExtensions;
+
+  return Boolean(
+    fileName &&
+      fileName === path.basename(fileName) &&
+      !fileName.includes("..") &&
+      /^[a-zA-Z0-9][a-zA-Z0-9 ._-]*$/.test(fileName) &&
+      allowedExtensions.has(extension),
+  );
 }
 
 function ensureDir(dirPath) {
@@ -169,13 +189,18 @@ function copyAsset(sourcePath, destinationPath) {
 }
 
 function projectAssetUrl(slug, fileName) {
-  return `/nas-projects/${slug}/${fileName}`;
+  return `/nas-projects/${encodeURIComponent(slug)}/${encodeURIComponent(fileName)}`;
 }
 
 function mapAssetList(fileNames, slug, folderPath, warnings, type) {
   return fileNames
     .filter(Boolean)
     .map((fileName) => {
+      if (!isSafeAssetName(fileName, type)) {
+        warnings.push(`${slug}: rejected unsafe ${type} file ${fileName}`);
+        return null;
+      }
+
       const source = path.join(folderPath, fileName);
       if (!fs.existsSync(source)) {
         warnings.push(`${slug}: missing ${type} file ${fileName}`);
@@ -207,6 +232,11 @@ function buildProjectRecord(folderName) {
   const category = normalizeCategory(parsed.category, filterGroup);
   const requiredImages = config.requiredImages || [];
 
+  if (!isSafeSlug(slug)) {
+    warnings.push(`${folderName}: rejected unsafe slug ${slug || "(empty)"}`);
+    return { project: null, warnings };
+  }
+
   for (const fileName of requiredImages) {
     if (!fs.existsSync(path.join(folderPath, fileName))) {
       warnings.push(`${slug}: missing required file ${fileName}`);
@@ -221,6 +251,13 @@ function buildProjectRecord(folderName) {
   const heroName = parsed.heroImage || "hero.png";
   const coverName = parsed.coverImage || thumbName;
   const assetTargets = [thumbName, heroName, coverName];
+
+  for (const fileName of assetTargets) {
+    if (!isSafeAssetName(fileName)) {
+      warnings.push(`${slug}: rejected unsafe image file ${fileName}`);
+      return { project: null, warnings };
+    }
+  }
 
   cleanDir(path.join(outputMediaRoot, slug));
 
